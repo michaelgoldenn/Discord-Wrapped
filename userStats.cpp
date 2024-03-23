@@ -1,12 +1,14 @@
 #include <map>
+#include <string>
 #include <ctime>
 
-//not proper c++, I just scribbled this down
+
 
 //A class that holds all messages and relevant stats about a user
 class userClass{
     public:
-        map<something, something else> messages;
+        //stores messages, mapped from the time associated with the message
+        map<time_t, Message> messages;
         
         int totalMessages;
         time_t timeSpentInCall;

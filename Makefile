@@ -1,6 +1,14 @@
+# Compiler
 CC = g++
+# Compiler flags
+CFLAGS = -Wall -I/app/libs/libxlsxwriter/include
+# Linker flags
+LDFLAGS = -L/app/libs/libxlsxwriter/lib -lxlsxwriter
 
-all: main
+all: main messageClass
 
-main:
-	$(CC) -o main main.cpp
+main: main.cpp
+	$(CC) $(CFLAGS) -o main main.cpp $(LDFLAGS)
+
+messageClass: messageClass.cpp
+	$(CC) -o messageClass messageClass.cpp $(LDFLAGS)

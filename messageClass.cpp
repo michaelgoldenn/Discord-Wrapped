@@ -92,3 +92,5 @@ class Message {
             return containsLink;
         }
 };
+
+int main(){return 0;};

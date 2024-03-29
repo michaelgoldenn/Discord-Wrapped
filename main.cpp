@@ -16,7 +16,7 @@ int main() {
     messages[2] = Message(2, std::time(0), "Testing mentions, right @person?");
     messages[3] = Message(3, std::time(0), "There are seven words in this message.");
     messages[4] = Message(4, std::time(0), "");
-    messages[5] = Message(5, std::time(0), "Check out Discord Wrapped: https://github.com/LukeTheStudent-2/Discord-Wrapped");
+    messages[5] = Message(5, std::time(0), "Discord Wrapped is the best!: https://github.com/LukeTheStudent-2/Discord-Wrapped");
 
     userClass testUser(1234); //create user with ID 1234
 

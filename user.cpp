@@ -8,7 +8,6 @@ time_t userClass::addMessageToUser(Message newMessage){
     totalWords+=newMessage.wordCount;
     updateWordFrequencies(newMessage.content);
     //timeSpentInCall: Do something with that later when we get the implementation specifics worked out
-    //implement wordlist later
 
     return newMessage.timeStamp;
 }
@@ -33,4 +32,9 @@ void userClass::printStats(){
     printf("\n");
     printf("Total Messages sent: \t%d\n", totalMessages);
     printf("Total words spoken: \t%lld\n", totalWords);
+    printf("Wordlist: \n");
+    for(const auto& elem : wordFrequency)
+    {
+        std::cout << "{" << elem.first << ": " << elem.second << "}, ";
+    }
 }

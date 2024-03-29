@@ -12,21 +12,21 @@ class Message {
         time_t timeStamp;
         std::string content;
 
-        int pingCount;
+        int mentionCount;
         int wordCount;
         bool isReply;
         time_t callTime;
         bool containsLink;
 
         // Default constructor
-        Message() : timeStamp(0), content(""), pingCount(0), wordCount(0), isReply(false), callTime(0), containsLink(false){};
+        Message() : timeStamp(0), content(""), mentionCount(0), wordCount(0), isReply(false), callTime(0), containsLink(false){};
 
         Message(time_t time, std::string message);
 
         void printMessage();
 
     private:
-        int getPingCount();
+        int getMentionCount();
         int getWordCount();
         bool getIsReply();
         time_t getCallTime();

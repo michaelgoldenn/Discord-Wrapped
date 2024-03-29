@@ -6,7 +6,7 @@ Message::Message(time_t time, std::string message){
     content = message;
     // fill in the other variables from the message
     callTime = getCallTime();
-    pingCount = getPingCount();
+    mentionCount = getMentionCount();
     wordCount = getWordCount();
     isReply = getIsReply();
     containsLink = getContainsLink();
@@ -26,11 +26,11 @@ void Message::printMessage(){
     printf("Call Time: \t%ld\n", callTime);
     printf("Contains Link: \t%s\n", containsLink?"true":"false");
     printf("Is Reply: \t%s\n", isReply?"true":"false");
-    printf("Ping Count: \t%d\n", pingCount);
+    printf("Mention Count: \t%d\n", mentionCount);
 }
 
-// Gets pingCount from the content
-int Message::getPingCount(){
+// Gets mentionCount from the content
+int Message::getMentionCount(){
     // AWFUL implementation - just counts the number of times a message has @. *please* change this later
     int count = 0;
     for (int i=0; i<content.size(); i++){

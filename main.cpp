@@ -25,7 +25,8 @@ int main(){
 
     
     //commented out the xlsx test
-    /* Create a new workbook and add a worksheet.
+    /*
+    // Create a new workbook and add a worksheet.
     lxw_workbook  *workbook  = workbook_new("example.xlsx");
     lxw_worksheet *worksheet = workbook_add_worksheet(workbook, NULL);
 

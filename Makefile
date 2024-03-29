@@ -5,10 +5,17 @@ CFLAGS = -Wall -I/app/libs/libxlsxwriter/include
 # Linker flags
 LDFLAGS = -L/app/libs/libxlsxwriter/lib -lxlsxwriter
 
-all: main messageClass
+# Makefile
+all: main
 
-main: main.cpp
-	$(CC) $(CFLAGS) -o main main.cpp $(LDFLAGS)
+main: main.o message.o
+	g++ main.o message.o -o main
 
-messageClass: messageClass.cpp
-	$(CC) -o messageClass messageClass.cpp $(LDFLAGS)
+main.o: main.cpp message.h
+	g++ -c main.cpp
+
+message.o: message.cpp message.h
+	g++ -c message.cpp
+
+clean:
+	rm *.o main

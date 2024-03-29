@@ -1,7 +1,9 @@
 #include "message.h"
+#include "user.h"
 
 // Message Constructor
-Message::Message(time_t time, std::string message){
+Message::Message(int ID, time_t time, std::string message){
+    id = ID;
     timeStamp = time;
     content = message;
     // fill in the other variables from the message
@@ -13,8 +15,8 @@ Message::Message(time_t time, std::string message){
 }
 
 // Prints the contents of the message to the terminal
-void Message::printMessage(){    
-    printf("\nPrinting Message:\n");
+void Message::printMessage() const {
+    printf("\nPrinting Message %d:\n", id);
     printf("Content: \t%s\n", content.c_str());
     printf("Word Count:\t%d\n", wordCount);
     printf("Timestamp: \t$");

@@ -1,21 +1,24 @@
 # Compiler
 CC = g++
 # Compiler flags
-CFLAGS = -Wall -I/app/libs/libxlsxwriter/include
+CFLAGS = -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -Wcast-align -Wconversion -Wsign-conversion -Wnull-dereference -g3 -O0
 # Linker flags
-LDFLAGS = -L/app/libs/libxlsxwriter/lib -lxlsxwriter
+LDFLAGS =
+
+# Source files
+SRCS = main.cpp message.cpp user.cpp
+# Object files
+OBJS = $(SRCS:.cpp=.o)
 
 # Makefile
 all: main
 
-main: main.o message.o
-	g++ main.o message.o -o main
+main: $(OBJS)
+	$(CC) $(OBJS) -o main $(LDFLAGS)
 
-main.o: main.cpp message.h
-	g++ -c main.cpp
-
-message.o: message.cpp message.h
-	g++ -c message.cpp
+# Rule to compile .cpp files to .o files
+%.o: %.cpp %.h
+	$(CC) -c $< $(CFLAGS)
 
 clean:
-	rm *.o main
+	rm -f *.o main

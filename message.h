@@ -9,8 +9,9 @@
 
 class Message {
     public:
-        time_t timeStamp;
+        int id;
         std::string content;
+        time_t timeStamp;
 
         int mentionCount;
         int wordCount;
@@ -19,11 +20,11 @@ class Message {
         bool containsLink;
 
         // Default constructor
-        Message() : timeStamp(0), content(""), mentionCount(0), wordCount(0), isReply(false), callTime(0), containsLink(false){};
+        Message() : id(0), timeStamp(0), content(""), mentionCount(0), wordCount(0), isReply(false), callTime(0), containsLink(false){};
 
-        Message(time_t time, std::string message);
+        Message(int ID, time_t time, std::string message);
 
-        void printMessage();
+        void printMessage() const;
 
     private:
         int getMentionCount();

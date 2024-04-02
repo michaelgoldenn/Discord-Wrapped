@@ -1,0 +1,2215 @@
+[
+    {
+        "id": "406967686489309184",
+        "type": 1,
+        "last_message_id": "1224507774092972154",
+        "flags": 0,
+        "last_pin_timestamp": "2024-01-15T22:22:00+00:00",
+        "recipients": [
+            {
+                "id": "406966360103583744",
+                "username": "jogomu",
+                "global_name": "jogomu",
+                "avatar": "c9d879af34a108974ac1c7de8d1436e1",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "435235967826264074",
+        "type": 1,
+        "last_message_id": "1221621253303959653",
+        "flags": 0,
+        "last_pin_timestamp": "2022-06-06T01:51:42+00:00",
+        "recipients": [
+            {
+                "id": "269247388156166144",
+                "username": "butteryboi_",
+                "global_name": "ButteryBoi_",
+                "avatar": "db3dda31a3b487b027332385a7c97f93",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "684551735645175848",
+        "type": 1,
+        "last_message_id": "1224501517545898046",
+        "flags": 0,
+        "last_pin_timestamp": "2024-03-25T19:21:27+00:00",
+        "recipients": [
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "688192188315729951",
+        "type": 1,
+        "last_message_id": "1222934838021980170",
+        "flags": 0,
+        "last_pin_timestamp": "2022-10-18T05:08:14+00:00",
+        "recipients": [
+            {
+                "id": "660487173841092608",
+                "username": "jedi_monk",
+                "global_name": "Jedi_Monk",
+                "avatar": "669dac56091477bcca8a637af3da9c9e",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "714260505060966440",
+        "type": 1,
+        "last_message_id": "1219586989314281532",
+        "flags": 0,
+        "last_pin_timestamp": "2024-03-19T10:03:17+00:00",
+        "recipients": [
+            {
+                "id": "714258808473518082",
+                "username": "jordanbopp",
+                "global_name": "\ud83c\udd71OPP",
+                "avatar": "e5c3d142b2207f47a9a60be7265065fc",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "725839650597634190",
+        "type": 1,
+        "last_message_id": "1222252418868183074",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "496733336543297546",
+                "username": "riverivy_",
+                "global_name": "Riverivy",
+                "avatar": "caa0fa445552ea722aa448db1e672575",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "733813057620410428",
+        "type": 1,
+        "last_message_id": "1224404537650053272",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "616673930278600735",
+                "username": "sweet_spot",
+                "global_name": "Sweet_Spot",
+                "avatar": "749bca343179e7b1263ec51e498a9445",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            }
+        ]
+    },
+    {
+        "id": "758130374785237072",
+        "type": 1,
+        "last_message_id": "1160525993417642095",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "374029424498180106",
+                "username": "blitz9668",
+                "global_name": "Blitz",
+                "avatar": "19ad127563d894b89bdeceb98b6f4e1d",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "777325835580604446",
+        "type": 1,
+        "last_message_id": "1224493546338521219",
+        "flags": 0,
+        "last_pin_timestamp": "2023-07-14T22:03:49+00:00",
+        "recipients": [
+            {
+                "id": "566777092163764250",
+                "username": "thatboybeau_",
+                "global_name": "Thatboybeau_",
+                "avatar": "42566f16747f33b8934e23fe54cbca07",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "782454182187237456",
+        "type": 1,
+        "last_message_id": "1205996620840181831",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "677314774853353495",
+                "username": "br0nc0",
+                "global_name": "()bronco",
+                "avatar": "23390e391aa798cddea2810aa54ab627",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "837526155137122346",
+        "type": 1,
+        "last_message_id": "1224120908071829535",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "249347637101330433",
+                "username": "phoness",
+                "global_name": "Phoness",
+                "avatar": "a_85eb46d3eeaee58401ee1c985f7edd0d",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            }
+        ]
+    },
+    {
+        "id": "849165946899791873",
+        "type": 1,
+        "last_message_id": "1222600376511893504",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "198613973614985216",
+                "username": "enareyou",
+                "global_name": "NRU",
+                "avatar": "c1626a3c76bcb30b2a135637c74577de",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "849165992307064834",
+        "type": 1,
+        "last_message_id": "1219336569866031284",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "575480522872979467",
+                "username": "swavless",
+                "global_name": "Swav",
+                "avatar": "daa1b4e0b617d1c41d1af84eca7f5fc6",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "860378892367167508",
+        "type": 1,
+        "last_message_id": "1202444536584863754",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "859569039977742337",
+                "username": "thenick0016",
+                "global_name": "ThatGuy",
+                "avatar": "2570b033f635c2c2167b7da6f9c9e46a",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "870263484468830218",
+        "type": 1,
+        "last_message_id": "1205337128024805376",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "366661097190850561",
+                "username": "hoaxcs",
+                "global_name": "hoax",
+                "avatar": "8b34299d1d6207ed6d65f6301b375160",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 128
+            }
+        ]
+    },
+    {
+        "id": "871169344984453191",
+        "type": 3,
+        "last_message_id": "1224487236662460476",
+        "flags": 0,
+        "last_pin_timestamp": "2024-03-02T18:37:13+00:00",
+        "recipients": [],
+        "name": "Permanent notes",
+        "icon": null,
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "874136739072069642",
+        "type": 1,
+        "last_message_id": "1212954935679787038",
+        "flags": 0,
+        "last_pin_timestamp": "2023-08-24T04:07:41+00:00",
+        "recipients": [
+            {
+                "id": "871588962756599818",
+                "username": "cincodemama",
+                "global_name": "cincodemama",
+                "avatar": "9ce6fe29c640718f0e26d934164f41cb",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "922317689467322418",
+        "type": 1,
+        "last_message_id": "1196707512372699146",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "212746248191475712",
+                "username": "chickory",
+                "global_name": "Chickory",
+                "avatar": "715f1a6a3c9b1f364d58aca929b705ad",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 128
+            }
+        ]
+    },
+    {
+        "id": "950421723495419954",
+        "type": 1,
+        "last_message_id": "1223773624809291949",
+        "flags": 0,
+        "last_pin_timestamp": "2022-07-27T00:13:07+00:00",
+        "recipients": [
+            {
+                "id": "223898925139099649",
+                "username": "zab3000",
+                "global_name": "zab",
+                "avatar": "24a9dd4aca38a00531b46cc8dd1104b4",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "954946335625314334",
+        "type": 1,
+        "last_message_id": "1222653381231771820",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "249388063514558464",
+                "username": "jimmay7907",
+                "global_name": "jimmay",
+                "avatar": "d0e220b28cc5d67469b2c043509a0547",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "958574366482915359",
+        "type": 1,
+        "last_message_id": "1208947790080774155",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "166660597318942720",
+                "username": "lordopies",
+                "global_name": "LordOPies",
+                "avatar": "b2a8be1e9e9f6a8c4ca869225d423bc7",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "962832342332870697",
+        "type": 1,
+        "last_message_id": "1206065535738191984",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "260474199909466113",
+                "username": "topshadowcs",
+                "global_name": "topshadow",
+                "avatar": "695dc9fb635081f93a2e7ba15558f839",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "962834756750413925",
+        "type": 1,
+        "last_message_id": "1221856691218419752",
+        "flags": 0,
+        "last_pin_timestamp": "2023-01-22T21:56:07+00:00",
+        "recipients": [
+            {
+                "id": "198096122042908673",
+                "username": "lookindapper",
+                "global_name": "dapper",
+                "avatar": "0a1bcb93f5875ae66b571bafe3298508",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "965409410111381524",
+        "type": 1,
+        "last_message_id": "1220832272157249657",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "194899617786101760",
+                "username": "chowdzz",
+                "global_name": "Chowdzz",
+                "avatar": "a_57a70ed6f0f51ea12e98caed818b9f13",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            }
+        ]
+    },
+    {
+        "id": "975534149735678012",
+        "type": 3,
+        "last_message_id": "975857893050028102",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "566777092163764250",
+                "username": "thatboybeau_",
+                "global_name": "Thatboybeau_",
+                "avatar": "42566f16747f33b8934e23fe54cbca07",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "198613973614985216",
+                "username": "enareyou",
+                "global_name": "NRU",
+                "avatar": "c1626a3c76bcb30b2a135637c74577de",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "269247388156166144",
+                "username": "butteryboi_",
+                "global_name": "ButteryBoi_",
+                "avatar": "db3dda31a3b487b027332385a7c97f93",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "677314774853353495",
+                "username": "br0nc0",
+                "global_name": "()bronco",
+                "avatar": "23390e391aa798cddea2810aa54ab627",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "871588962756599818",
+                "username": "cincodemama",
+                "global_name": "cincodemama",
+                "avatar": "9ce6fe29c640718f0e26d934164f41cb",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "Troy's 5 closest discord friends",
+        "icon": null,
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "979905705328922644",
+        "type": 1,
+        "last_message_id": "1201781591647727637",
+        "flags": 0,
+        "last_pin_timestamp": "2022-06-27T00:32:00+00:00",
+        "recipients": [
+            {
+                "id": "285076446521851905",
+                "username": "budhee",
+                "global_name": "BudHee",
+                "avatar": "cae6afc3cad8a3ccc0158e417b29ae30",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "985664421936381992",
+        "type": 1,
+        "last_message_id": "1195949600402587688",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "131802557126279168",
+                "username": "zygoat",
+                "global_name": "Zygoat",
+                "avatar": "27dfa91ac1d74f1d9ca1b8a4bd1cda3c",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "985980036102385754",
+        "type": 1,
+        "last_message_id": "1206331135156686889",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "267019305386770432",
+                "username": "retnuhcs",
+                "global_name": "Retnuh",
+                "avatar": "ea17d4611d1a5ed9d037dbec187bc6be",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            }
+        ]
+    },
+    {
+        "id": "991067127890997340",
+        "type": 1,
+        "last_message_id": "1223888929426640896",
+        "flags": 0,
+        "last_pin_timestamp": "2024-02-08T06:27:24+00:00",
+        "recipients": [
+            {
+                "id": "481671068554362881",
+                "username": "heruisi",
+                "global_name": "\u4f55\u745e\u601d",
+                "avatar": "ec2d0e04b8982efc0a8ab86e49f8ba7e",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "991471537574129704",
+        "type": 1,
+        "last_message_id": "1224350364308869140",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "382263708031909908",
+                "username": "peddlur",
+                "global_name": "peddlur",
+                "avatar": "4f228843b1ce7454930e12b5b4259f14",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1003836609923399772",
+        "type": 3,
+        "last_message_id": "1224475165627252736",
+        "flags": 0,
+        "last_pin_timestamp": "2023-11-03T16:49:00+00:00",
+        "recipients": [
+            {
+                "id": "871588962756599818",
+                "username": "cincodemama",
+                "global_name": "cincodemama",
+                "avatar": "9ce6fe29c640718f0e26d934164f41cb",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "406966360103583744",
+                "username": "jogomu",
+                "global_name": "jogomu",
+                "avatar": "c9d879af34a108974ac1c7de8d1436e1",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "MOM AND DAD",
+        "icon": "3fea9c19507e1f58ec5e7f6b1fe069f0",
+        "owner_id": "406966360103583744"
+    },
+    {
+        "id": "1010975500321161247",
+        "type": 1,
+        "last_message_id": "1213541347777060904",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "334439679099142155",
+                "username": "blockguy143",
+                "global_name": "blockguy143",
+                "avatar": "accbe97ce07d88de4cddc3c4ad778413",
+                "avatar_decoration_data": {
+                    "asset": "a_5e1210779d99ece1c0b4f438a5bc6e72",
+                    "sku_id": "1216908559548289084"
+                },
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1015822626289090570",
+        "type": 3,
+        "last_message_id": "1102961698324885544",
+        "flags": 0,
+        "last_pin_timestamp": "2022-09-20T04:07:11+00:00",
+        "recipients": [
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "366661097190850561",
+                "username": "hoaxcs",
+                "global_name": "hoax",
+                "avatar": "8b34299d1d6207ed6d65f6301b375160",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 128
+            },
+            {
+                "id": "386351604099448832",
+                "username": "pewpewgunner",
+                "global_name": "PewPewGuns",
+                "avatar": "e87432bb3183a0bf6a02cc0c845496ef",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "643428556386336796",
+                "username": "r4zer_",
+                "global_name": "R4ZZER\ud83c\uddf1\ud83c\uddf9",
+                "avatar": "ef31aa27456d902e061d6f5dcd6c89b0",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "545145218228289577",
+                "username": "spaicyxa",
+                "global_name": "spaicyxa228",
+                "avatar": "6b69ed56b5b13ac414643c32dcb98727",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "273201611801886732",
+                "username": ".howdee",
+                "global_name": "Howdee",
+                "avatar": "43d830234bfc8f56ce19489fd1cf9af9",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "292461860089888770",
+                "username": "r3d0x",
+                "global_name": "redox",
+                "avatar": "3d12c58e2fed2b2b5c91ad83ee314f41",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "677314774853353495",
+                "username": "br0nc0",
+                "global_name": "()bronco",
+                "avatar": "23390e391aa798cddea2810aa54ab627",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "Map Theory",
+        "icon": "b6907b7126377fe1fe8573248758d214",
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "1040856109344366653",
+        "type": 1,
+        "last_message_id": "1224211765374746675",
+        "flags": 0,
+        "last_pin_timestamp": "2023-02-28T03:35:15+00:00",
+        "recipients": [
+            {
+                "id": "266008996962369536",
+                "username": "h0use_cs",
+                "global_name": "h0use",
+                "avatar": "70b5a88376c9b7ce1abe24480bb05c4b",
+                "avatar_decoration_data": {
+                    "asset": "a_5e1210779d99ece1c0b4f438a5bc6e72",
+                    "sku_id": "1216908559548289084"
+                },
+                "discriminator": "0",
+                "public_flags": 128
+            }
+        ]
+    },
+    {
+        "id": "1061698769109925998",
+        "type": 3,
+        "last_message_id": "1216359887727099904",
+        "flags": 0,
+        "last_pin_timestamp": "2023-08-28T19:01:03+00:00",
+        "recipients": [
+            {
+                "id": "166660597318942720",
+                "username": "lordopies",
+                "global_name": "LordOPies",
+                "avatar": "b2a8be1e9e9f6a8c4ca869225d423bc7",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "192817837918781441",
+                "username": "lysandercs",
+                "global_name": "Lysander",
+                "avatar": "36197570365e1b87ec78d71feb9b3e97",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "309070026042769408",
+                "username": "qu1znos",
+                "global_name": "Quinn",
+                "avatar": "3737166a3063b42807c7810b01f9be9d",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "194899617786101760",
+                "username": "chowdzz",
+                "global_name": "Chowdzz",
+                "avatar": "a_57a70ed6f0f51ea12e98caed818b9f13",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "267019305386770432",
+                "username": "retnuhcs",
+                "global_name": "Retnuh",
+                "avatar": "ea17d4611d1a5ed9d037dbec187bc6be",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "329794977225900032",
+                "username": "eelcs",
+                "global_name": "EEL",
+                "avatar": "aba2147581512f10bd7434da758fff58",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "DaHomies",
+        "icon": "8d35ce9f122336060f2aa407cb50bc08",
+        "owner_id": "194899617786101760"
+    },
+    {
+        "id": "1063689864991748096",
+        "type": 1,
+        "last_message_id": "1203373183563079700",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "192817837918781441",
+                "username": "lysandercs",
+                "global_name": "Lysander",
+                "avatar": "36197570365e1b87ec78d71feb9b3e97",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1064048211104387073",
+        "type": 1,
+        "last_message_id": "1204657270642974720",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1040925633313771541",
+                "username": "_bruce3",
+                "global_name": "Bruce3",
+                "avatar": "f1386f5bbcc696772cec0d82b06dd367",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1064716354063695963",
+        "type": 1,
+        "last_message_id": "1224522432228888576",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "658512281449005073",
+                "username": "c0ndad",
+                "global_name": "c0ndad",
+                "avatar": "072fd2e5922d0e20ad584fb9a18f3e95",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1066166651411775518",
+        "type": 3,
+        "last_message_id": "1197826909627760741",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "459748083706757132",
+                "username": "jonald__",
+                "global_name": "jonald",
+                "avatar": "e46a4e495e981ecf1509f949c7a0b193",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "566777092163764250",
+                "username": "thatboybeau_",
+                "global_name": "Thatboybeau_",
+                "avatar": "42566f16747f33b8934e23fe54cbca07",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "677314774853353495",
+                "username": "br0nc0",
+                "global_name": "()bronco",
+                "avatar": "23390e391aa798cddea2810aa54ab627",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "DFA Esports",
+        "icon": null,
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "1067627135461765120",
+        "type": 1,
+        "last_message_id": "1196647699198521444",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "351258599584038916",
+                "username": "views0778",
+                "global_name": "views",
+                "avatar": "74caa499ce1b85c8f6a8cf3031fb4845",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1071728881809231913",
+        "type": 1,
+        "last_message_id": "1190798832607436840",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "211641439602343937",
+                "username": "dreamz9459",
+                "global_name": "Dreamz",
+                "avatar": "a_bf04dcc9a2fe182ff8ca7a8b71208137",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1073786274533617675",
+        "type": 1,
+        "last_message_id": "1224472543801639036",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "329794977225900032",
+                "username": "eelcs",
+                "global_name": "EEL",
+                "avatar": "aba2147581512f10bd7434da758fff58",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1082767432340471859",
+        "type": 1,
+        "last_message_id": "1224437678804828160",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "348701253523734529",
+                "username": "joose123",
+                "global_name": "Joose",
+                "avatar": "e909d1c02f4c88b55cc688f38f7c7e40",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1087345879171731536",
+        "type": 1,
+        "last_message_id": "1194820532697309235",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "394656633604669440",
+                "username": "exobob",
+                "global_name": "Exobob",
+                "avatar": "e3e359763b97ee8da15939835b38bf75",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1087444996615065600",
+        "type": 1,
+        "last_message_id": "1087445040764289094",
+        "flags": 32,
+        "recipients": [
+            {
+                "id": "988332199612928081",
+                "username": "vortex00398",
+                "global_name": "Vortex",
+                "avatar": "ece3a651dc903fa054eef5afd0944955",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 1048576
+            }
+        ]
+    },
+    {
+        "id": "1089650786587394132",
+        "type": 1,
+        "last_message_id": "1205335239778508882",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "748937872257581086",
+                "username": "j1gfly",
+                "global_name": "J1G",
+                "avatar": "43c59171e9d8dbe39fee7627ebc87d20",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1115667803740065926",
+        "type": 3,
+        "last_message_id": "1138285515544727643",
+        "flags": 0,
+        "last_pin_timestamp": "2023-06-08T22:58:10+00:00",
+        "recipients": [
+            {
+                "id": "627603517586276359",
+                "username": "the_silentspirit",
+                "global_name": "The_SilentSpirit",
+                "avatar": "7b68579374450502f7e55bd83001365a",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 256
+            },
+            {
+                "id": "400039052067471383",
+                "username": "sphinxythequeen",
+                "global_name": "Sphinxy",
+                "avatar": "5a3497f7b7dca087502185d23e52c421",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "646501586335432716",
+                "username": "literallyacrab",
+                "global_name": "literallyacrab",
+                "avatar": "cf9247ddfcb2783fd37aba19f69a7ff4",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "215270670848884736",
+                "username": "pbear.",
+                "global_name": "PBear",
+                "avatar": "a00dc54ab3ee6ec708b23a74467c7411",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 256
+            },
+            {
+                "id": "180388610770599936",
+                "username": "c80",
+                "global_name": "C80",
+                "avatar": "e3b0a7ee3a165bd37731fef48d9d595a",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "283699564182110208",
+                "username": "spookyycat",
+                "global_name": "spooky",
+                "avatar": "181aa262f7746b0ea5fdfe6f83db5055",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "114837192362164224",
+                "username": "macros20",
+                "global_name": "Macros20",
+                "avatar": "3ceb2688821a9714662843974d33f435",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "carries",
+        "icon": null,
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "1154280007326244955",
+        "type": 1,
+        "last_message_id": "1165467129781420052",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1083826443257131148",
+                "username": "waitingonsenpai",
+                "global_name": "Waiting on Senpai\ud83c\udf38",
+                "avatar": "5519c094d17f41a7f516bd3c0de3a689",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 256
+            }
+        ]
+    },
+    {
+        "id": "1156328907516162168",
+        "type": 3,
+        "last_message_id": "1223701012146028665",
+        "flags": 0,
+        "last_pin_timestamp": "2024-02-05T17:20:41+00:00",
+        "recipients": [
+            {
+                "id": "1057677616963924058",
+                "username": "nkang",
+                "global_name": "nKang",
+                "avatar": "93c68a6be49a04cea802919abe38e790",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "275311856283811841",
+                "username": "itsmebsg",
+                "global_name": "Seth",
+                "avatar": "88c5b9f8c508745b318982435b04ca03",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 256
+            },
+            {
+                "id": "192817837918781441",
+                "username": "lysandercs",
+                "global_name": "Lysander",
+                "avatar": "36197570365e1b87ec78d71feb9b3e97",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "329794977225900032",
+                "username": "eelcs",
+                "global_name": "EEL",
+                "avatar": "aba2147581512f10bd7434da758fff58",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "194899617786101760",
+                "username": "chowdzz",
+                "global_name": "Chowdzz",
+                "avatar": "a_57a70ed6f0f51ea12e98caed818b9f13",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "309070026042769408",
+                "username": "qu1znos",
+                "global_name": "Quinn",
+                "avatar": "3737166a3063b42807c7810b01f9be9d",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "CSTeam 2k24",
+        "icon": "aa5d3ed2baffe6c3da1d7bca09471456",
+        "owner_id": "194899617786101760"
+    },
+    {
+        "id": "1156368068470116442",
+        "type": 1,
+        "last_message_id": "1220184505021759489",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "309070026042769408",
+                "username": "qu1znos",
+                "global_name": "Quinn",
+                "avatar": "3737166a3063b42807c7810b01f9be9d",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1156375729257320528",
+        "type": 1,
+        "last_message_id": "1222701311967887410",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "275311856283811841",
+                "username": "itsmebsg",
+                "global_name": "Seth",
+                "avatar": "88c5b9f8c508745b318982435b04ca03",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 256
+            }
+        ]
+    },
+    {
+        "id": "1158470526453432351",
+        "type": 1,
+        "last_message_id": "1207129344904790048",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "122625462932471811",
+                "username": "pewslashpew",
+                "global_name": "IIIIIIIIIIIII",
+                "avatar": "24704bf913e58fb337b319da3d4ce062",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            }
+        ]
+    },
+    {
+        "id": "1159329736942686220",
+        "type": 3,
+        "last_message_id": "1164341238972031057",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "404783910296485889",
+                "username": "jaeule.",
+                "global_name": "jae",
+                "avatar": "4283990db0b8c8741c4c044ffa3c35a0",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            },
+            {
+                "id": "309070026042769408",
+                "username": "qu1znos",
+                "global_name": "Quinn",
+                "avatar": "3737166a3063b42807c7810b01f9be9d",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "334439679099142155",
+                "username": "blockguy143",
+                "global_name": "blockguy143",
+                "avatar": "accbe97ce07d88de4cddc3c4ad778413",
+                "avatar_decoration_data": {
+                    "asset": "a_5e1210779d99ece1c0b4f438a5bc6e72",
+                    "sku_id": "1216908559548289084"
+                },
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "terra squad",
+        "icon": null,
+        "owner_id": "334439679099142155"
+    },
+    {
+        "id": "1161401601697783939",
+        "type": 1,
+        "last_message_id": "1161444965352751144",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "115898830204960771",
+                "username": "jj16240",
+                "global_name": "jj16240",
+                "avatar": "76a4aeeca126e9896c516d7cfbf30de5",
+                "avatar_decoration_data": {
+                    "asset": "a_d3da36040163ee0f9176dfe7ced45cdc",
+                    "sku_id": "1144058522808614923"
+                },
+                "discriminator": "0",
+                "public_flags": 128
+            }
+        ]
+    },
+    {
+        "id": "1161401757662986330",
+        "type": 1,
+        "last_message_id": "1194006595252793354",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "400095091747979304",
+                "username": "joshiwa",
+                "global_name": "joshiwa",
+                "avatar": "6c39560517671651cc035a423c285033",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1163485908885049445",
+        "type": 1,
+        "last_message_id": "1214945463850111067",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "163122452967325696",
+                "username": "youngrisey",
+                "global_name": "rise",
+                "avatar": "a_2f7f459fe8fc2f2fdedd56919b3c98a4",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1165840554093990019",
+        "type": 1,
+        "last_message_id": "1197752427873579058",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "221359819880136715",
+                "username": "a1phonious",
+                "global_name": "A1pha",
+                "avatar": "bfd06ff9c46e53717df6aff65c196096",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 512
+            }
+        ]
+    },
+    {
+        "id": "1165840575623335969",
+        "type": 1,
+        "last_message_id": "1169879049083047998",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "667970217288400896",
+                "username": "monsyera",
+                "global_name": "monsyera",
+                "avatar": "34652566289469870b2cb0cd0cfe87ad",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1165840600935972957",
+        "type": 1,
+        "last_message_id": "1173133819667300473",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "426549148607578122",
+                "username": "zaltycs",
+                "global_name": "Zalty",
+                "avatar": "39e6156925058dd2acc41ff1c88f73ef",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 128
+            }
+        ]
+    },
+    {
+        "id": "1169295344086036521",
+        "type": 1,
+        "last_message_id": "1202457996966502481",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "819304213757689876",
+                "username": "ethex",
+                "global_name": "ethex",
+                "avatar": "f194e6a718be40337b5ceacfc3e923a9",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1170139794551083110",
+        "type": 1,
+        "last_message_id": "1216487659707564214",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1051883369744568420",
+                "username": "PRACC.COM",
+                "global_name": null,
+                "avatar": "6f8fd1dfcf8760089fcdb8a4663c683d",
+                "avatar_decoration_data": null,
+                "discriminator": "5551",
+                "public_flags": 65536,
+                "bot": true
+            }
+        ]
+    },
+    {
+        "id": "1189988879646871683",
+        "type": 1,
+        "last_message_id": "1224150998717567046",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1189987586509377671",
+                "username": "clarajoan.",
+                "global_name": "Clara Joan",
+                "avatar": "1f502dbc3cd993a0dbcd0a1e6a6e2184",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1190150877688905736",
+        "type": 1,
+        "last_message_id": "1224218745090736181",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1190143667986509936",
+                "username": "elisa_29",
+                "global_name": "elisa29",
+                "avatar": "5a4900b2fbcc08f91e37769f9b3fa6ab",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1190161111954227201",
+        "type": 1,
+        "last_message_id": "1190413257199071393",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "426669155757064202",
+                "username": "dema4732",
+                "global_name": "DEMA",
+                "avatar": "628e911142a81e9f4cb0b155b7afb134",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1190164584640827504",
+        "type": 1,
+        "last_message_id": "1190413234746949822",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "536704199690289163",
+                "username": "darkhelmet12e4",
+                "global_name": "Dark Helmet12E4",
+                "avatar": "b46c1b93067cabe6a65066b7a9dd6705",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1190412952759709806",
+        "type": 1,
+        "last_message_id": "1190412968312180898",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "215350532963827712",
+                "username": "regicide5521",
+                "global_name": "Regicide_",
+                "avatar": "72b7708bccf511be0429b33eb5459dd1",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1191254397498433567",
+        "type": 1,
+        "last_message_id": "1208506922496426014",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "755850862261436607",
+                "username": "mwgscientist",
+                "global_name": "Mwgscientist",
+                "avatar": "f5f000a5dcf3173e122351d9ee8ab883",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1195416346343784491",
+        "type": 1,
+        "last_message_id": "1208067784752373822",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "927380908368093185",
+                "username": "yahir8901",
+                "global_name": "Yahir",
+                "avatar": null,
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1195833462456864769",
+        "type": 1,
+        "last_message_id": "1197256604593172520",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "292802196188299274",
+                "username": "milkywayblue",
+                "global_name": "Milky",
+                "avatar": "2d386a15a975946b0f4aae58bcb6a365",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            }
+        ]
+    },
+    {
+        "id": "1197284188588609557",
+        "type": 1,
+        "last_message_id": "1197309498960904303",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "339846507660443649",
+                "username": "maxcrafterplayz",
+                "global_name": "MaxCrafterPlayz",
+                "avatar": "7a2313c5c4ffff3cde41e4a8c5f98510",
+                "avatar_decoration_data": {
+                    "asset": "a_5e1210779d99ece1c0b4f438a5bc6e72",
+                    "sku_id": "1216908559548289084"
+                },
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1197332758591184916",
+        "type": 3,
+        "last_message_id": "1224395259253887107",
+        "flags": 0,
+        "last_pin_timestamp": "2024-03-29T16:52:33+00:00",
+        "recipients": [
+            {
+                "id": "267434780792979463",
+                "username": "michaelg123",
+                "global_name": "MichaelG123",
+                "avatar": "5a9cbceab4444a6bf0892c322456fee5",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "927380908368093185",
+                "username": "yahir8901",
+                "global_name": "Yahir",
+                "avatar": null,
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "339846507660443649",
+                "username": "maxcrafterplayz",
+                "global_name": "MaxCrafterPlayz",
+                "avatar": "7a2313c5c4ffff3cde41e4a8c5f98510",
+                "avatar_decoration_data": {
+                    "asset": "a_5e1210779d99ece1c0b4f438a5bc6e72",
+                    "sku_id": "1216908559548289084"
+                },
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "382585485501136906",
+                "username": "cannedtuna0231",
+                "global_name": "CannedTuna",
+                "avatar": "828e30e56e3b04bac1043e656399f2c9",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "746821624480923779",
+                "username": "average_cracker",
+                "global_name": "_LostintheSauce_",
+                "avatar": "172d0aadaa349bc527d76a982f0ad184",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "CS3141 Group 5",
+        "icon": "338dca7f1dd12dd1f6a6e196fef34636",
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "1197332826912211005",
+        "type": 1,
+        "last_message_id": null,
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "382585485501136906",
+                "username": "cannedtuna0231",
+                "global_name": "CannedTuna",
+                "avatar": "828e30e56e3b04bac1043e656399f2c9",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1197333597888192604",
+        "type": 1,
+        "last_message_id": null,
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "198619568611000320",
+                "username": "ashundr",
+                "global_name": "ash",
+                "avatar": "6c3668dd769031c0c45e66f25782d94c",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1197398831126552647",
+        "type": 1,
+        "last_message_id": "1197403699652333588",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "115904197005672453",
+                "username": "toastyy",
+                "global_name": "toasty",
+                "avatar": "28bb3b9c49feefaec81f30038fbdf2ec",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1198809103464677529",
+        "type": 3,
+        "last_message_id": "1204662462863908934",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "783609520558702604",
+                "username": "ccmc_",
+                "global_name": "ccmc",
+                "avatar": "be67351be6d82c9f9a833e26d2e472f9",
+                "avatar_decoration_data": {
+                    "asset": "a_904b1989077c91fca1168d39bfcaa0a4",
+                    "sku_id": "1220514048068812901"
+                },
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "366661097190850561",
+                "username": "hoaxcs",
+                "global_name": "hoax",
+                "avatar": "8b34299d1d6207ed6d65f6301b375160",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 128
+            },
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "740731588022632528",
+                "username": "spencermg",
+                "global_name": "Affinity",
+                "avatar": "5d86d49a9f94fca3f92484771bb61085",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "BDE",
+        "icon": null,
+        "owner_id": "740731588022632528"
+    },
+    {
+        "id": "1200226045685665892",
+        "type": 1,
+        "last_message_id": "1216894412265885706",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "208321872650174465",
+                "username": "lutpug",
+                "global_name": "Lutpug",
+                "avatar": "a72cb0ce6ba696b03bd702ddc4ff513f",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1202757869452136568",
+        "type": 1,
+        "last_message_id": "1222592638125871207",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1057677616963924058",
+                "username": "nkang",
+                "global_name": "nKang",
+                "avatar": "93c68a6be49a04cea802919abe38e790",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 64
+            }
+        ]
+    },
+    {
+        "id": "1203199275488641034",
+        "type": 1,
+        "last_message_id": "1208527398845419540",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "285912342141730816",
+                "username": "milkshake6137",
+                "global_name": "MilkShake",
+                "avatar": "a_ede79194d03389b91ba665c2cdb0809c",
+                "avatar_decoration_data": {
+                    "asset": "a_5e1210779d99ece1c0b4f438a5bc6e72",
+                    "sku_id": "1216908559548289084"
+                },
+                "discriminator": "0",
+                "public_flags": 768
+            }
+        ]
+    },
+    {
+        "id": "1203515137009389630",
+        "type": 1,
+        "last_message_id": "1224176043611521105",
+        "flags": 0,
+        "last_pin_timestamp": "2024-02-21T02:59:04+00:00",
+        "recipients": [
+            {
+                "id": "570352536725225512",
+                "username": "mclovin1381",
+                "global_name": "McLovin!",
+                "avatar": "66bca205ef0493a677cdcdcfe107fe4f",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1204971545890529330",
+        "type": 1,
+        "last_message_id": "1205000309752209418",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "830506756051959840",
+                "username": "mutinous_me",
+                "global_name": "Mut1ny",
+                "avatar": "eb76a5cccdfeb5fadd110999e727b464",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1205006781798154250",
+        "type": 3,
+        "last_message_id": "1209167955280273448",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "570352536725225512",
+                "username": "mclovin1381",
+                "global_name": "McLovin!",
+                "avatar": "66bca205ef0493a677cdcdcfe107fe4f",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "THE A TEAM!",
+        "icon": null,
+        "owner_id": "570352536725225512"
+    },
+    {
+        "id": "1205377139386621984",
+        "type": 1,
+        "last_message_id": null,
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1197875498819260471",
+                "username": "synerifj",
+                "global_name": "Synerifj",
+                "avatar": null,
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 1048576
+            }
+        ]
+    },
+    {
+        "id": "1206669490566209587",
+        "type": 1,
+        "last_message_id": "1206669501698154496",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "576186815866863635",
+                "username": "whiterspon1984",
+                "global_name": "\u0449\u045b\u012f\u2020\u20ac\u044f\u0455p\u00a4\u03a01984",
+                "avatar": "2203786a2876752aeaa007b309a4b4a0",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1206804707608231987",
+        "type": 1,
+        "last_message_id": "1218750573248118834",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "800117846444474388",
+                "username": "dredayone",
+                "global_name": "lakers!",
+                "avatar": "de1b611dca34cfb5e54507522022ee6a",
+                "avatar_decoration_data": {
+                    "asset": "a_c6b3bc1dc49e5b284dca0b6437831004",
+                    "sku_id": "1197344396983664670"
+                },
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1207165467806924841",
+        "type": 1,
+        "last_message_id": "1207168410035945482",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "783609520558702604",
+                "username": "ccmc_",
+                "global_name": "ccmc",
+                "avatar": "be67351be6d82c9f9a833e26d2e472f9",
+                "avatar_decoration_data": {
+                    "asset": "a_904b1989077c91fca1168d39bfcaa0a4",
+                    "sku_id": "1220514048068812901"
+                },
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1211873812296114216",
+        "type": 3,
+        "last_message_id": "1211873819233624096",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "227138491216035841",
+                "username": "sovietsteel",
+                "global_name": "Soviet Steel",
+                "avatar": "adeb18c42cffffa4f12b60a3c75bea10",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "263314717668409345",
+                "username": "d2larry",
+                "global_name": "Larry",
+                "avatar": "1e45cd5c1e08f50ca8dfbb8f935d1275",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": null,
+        "icon": null,
+        "owner_id": "227138491216035841"
+    },
+    {
+        "id": "1213566937406378087",
+        "type": 1,
+        "last_message_id": "1213567229434794014",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "461939770923286538",
+                "username": "curbside78",
+                "global_name": "Curbside78",
+                "avatar": "9e3d19ea36c8077776cd61772aaaf2fa",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1213570961975283734",
+        "type": 1,
+        "last_message_id": "1213976069321785445",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "571822890345955329",
+                "username": "theprinceofmma",
+                "global_name": "ThePrinceOfMma",
+                "avatar": "bf9631ed1cc273c48ab47e421f0724de",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1213683714790268978",
+        "type": 1,
+        "last_message_id": "1213929421787103292",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "788487000616861756",
+                "username": "applehunter13",
+                "global_name": "chiko567941",
+                "avatar": "f6cb6ae8be09a66c186102a330969ba9",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1213789191662735410",
+        "type": 3,
+        "last_message_id": "1213789295769423872",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "571822890345955329",
+                "username": "theprinceofmma",
+                "global_name": "ThePrinceOfMma",
+                "avatar": "bf9631ed1cc273c48ab47e421f0724de",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": null,
+        "icon": null,
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "1213789369299636264",
+        "type": 1,
+        "last_message_id": "1214058489047945276",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "912811273736052816",
+                "username": "ac3jupiter",
+                "global_name": "ac3jupiter",
+                "avatar": "f7b0a56af778906e440a2673773ee1de",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1214058591812718673",
+        "type": 3,
+        "last_message_id": "1218663513074176090",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "844396929358102548",
+                "username": "pickles9227",
+                "global_name": "Pickles",
+                "avatar": "455d975ef1754086c5ccd5ffa8e7bc18",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "571822890345955329",
+                "username": "theprinceofmma",
+                "global_name": "ThePrinceOfMma",
+                "avatar": "bf9631ed1cc273c48ab47e421f0724de",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": "DOGG POUND TOURNY TEAM",
+        "icon": null,
+        "owner_id": "348155261179002883"
+    },
+    {
+        "id": "1214566401440743485",
+        "type": 1,
+        "last_message_id": "1222655441683615824",
+        "flags": 0,
+        "last_pin_timestamp": "2024-03-27T18:12:31+00:00",
+        "recipients": [
+            {
+                "id": "754630369755791450",
+                "username": "chavat69",
+                "global_name": "Pratik",
+                "avatar": "94a2de6ebac4b06aeadfafdbdce55971",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1216791411018436670",
+        "type": 3,
+        "last_message_id": "1216792077501992960",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "871588962756599818",
+                "username": "cincodemama",
+                "global_name": "cincodemama",
+                "avatar": "9ce6fe29c640718f0e26d934164f41cb",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "406966360103583744",
+                "username": "jogomu",
+                "global_name": "jogomu",
+                "avatar": "c9d879af34a108974ac1c7de8d1436e1",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            },
+            {
+                "id": "1190143667986509936",
+                "username": "elisa_29",
+                "global_name": "elisa29",
+                "avatar": "5a4900b2fbcc08f91e37769f9b3fa6ab",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ],
+        "name": null,
+        "icon": null,
+        "owner_id": "871588962756599818"
+    },
+    {
+        "id": "1218337578097446963",
+        "type": 1,
+        "last_message_id": "1218355928600940575",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "844396929358102548",
+                "username": "pickles9227",
+                "global_name": "Pickles",
+                "avatar": "455d975ef1754086c5ccd5ffa8e7bc18",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1221333938543530055",
+        "type": 1,
+        "last_message_id": "1222905984117379092",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "723240415066587200",
+                "username": "remmy4930",
+                "global_name": "remmy",
+                "avatar": "2446811df1fc4f2f799c55658667922d",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1222651010925990028",
+        "type": 1,
+        "last_message_id": "1222662076670017677",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "1222650414810267771",
+                "username": "honest_dragon_48705",
+                "global_name": "nicholas",
+                "avatar": null,
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 1048576
+            }
+        ]
+    },
+    {
+        "id": "1223332247411753142",
+        "type": 1,
+        "last_message_id": "1223332540031701177",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "102263412821598208",
+                "username": "aratoshii",
+                "global_name": "aratoshii",
+                "avatar": "e37e8ed94506fa60087c0cfe360e7888",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1224107331617292298",
+        "type": 1,
+        "last_message_id": "1224107596320080034",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "418499822983577600",
+                "username": "gameschaedl",
+                "global_name": "GameSchaedl",
+                "avatar": "5d5075a2b4ebf7ddc5d37ea674baff30",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    },
+    {
+        "id": "1224118300036960317",
+        "type": 1,
+        "last_message_id": "1224118307955671213",
+        "flags": 0,
+        "recipients": [
+            {
+                "id": "106110564203233280",
+                "username": ".oakz.",
+                "global_name": "oak",
+                "avatar": "cf200c0528cd92266dbf2830f753c133",
+                "avatar_decoration_data": null,
+                "discriminator": "0",
+                "public_flags": 0
+            }
+        ]
+    }
+]

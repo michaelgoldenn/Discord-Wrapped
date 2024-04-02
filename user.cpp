@@ -1,40 +1,22 @@
 #include "user.h"
+#include <iostream>
 
-time_t userClass::addMessageToUser(Message newMessage){
-    messages.insert({newMessage.id, newMessage});
-
-    //update vars accordingly
-    totalMessages++;
-    totalWords+=newMessage.wordCount;
-    updateWordFrequencies(newMessage.content);
-    //timeSpentInCall: Do something with that later when we get the implementation specifics worked out
-
-    return newMessage.timeStamp;
+// function to add a message
+void User::addMessage(const Message& message) {
 }
 
-void userClass::printMessages(){
-    for (const auto& pair : messages) {
-        pair.second.printMessage(); // Assuming Message class has a printMessage() function
-    }
+// function to print messages of the user
+void User::printMessages() {
 }
 
-// Function to update word frequencies
-void userClass::updateWordFrequencies(const std::string& inputString) {
-    std::istringstream iss(inputString);
-    std::string word;
-    while (iss >> word) {
-        // Increment the frequency count for the current word
-        this->wordFrequency[word]++;
-    }
+// function to add a call
+void User::addCall(const Call& call) {
 }
 
-void userClass::printStats(){
-    printf("\n");
-    printf("Total Messages sent: \t%d\n", totalMessages);
-    printf("Total words spoken: \t%lld\n", totalWords);
-    printf("Wordlist: \n");
-    for(const auto& elem : wordFrequency)
-    {
-        std::cout << "{" << elem.first << ": " << elem.second << "}, ";
-    }
+// function to print calls of the user
+void User::printCalls() {
+}
+
+// function to print user statistics
+void User::printStats() {
 }

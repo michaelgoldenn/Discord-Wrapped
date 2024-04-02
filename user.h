@@ -1,35 +1,39 @@
-#ifndef USER_H
-#define USER_H
+#pragma once
 
-#include <map>
+#include <vector>
 #include <string>
-#include <ctime>
+#include <map>
 
 #include "message.h"
+#include "call.h"
 
-//A class that holds all messages and relevant stats about another user
-class userClass{
+// A class that holds all messages and relevant stats about another user
+class User{
     public:
-        int userID;
-        std::map<int, Message> messages; //stores messages, mapped from the message ID with the message
-        
-        int totalMessages;
-        long long int totalWords;
-        time_t timeSpentInCall;
-        std::map<std::string, int> wordFrequency; //stores words and how often they've been seen
+        // variables from json
+        std::string id;             // user #
+        std::string channel;        // channel #        
+        std::string username;       // global user id
+        std::string global_name;    // display name
+        std::string discriminator;  // i.e. #2415                       almost always 0 now
 
-        // Default constructor
-        userClass() : userID(0), totalMessages(0), totalWords(0), timeSpentInCall(0) {}
+        // post processing variables
+        int messagesSent;
+        int messagesReceived;
 
-        // Constructor with userID parameter
-        userClass(int id) : userID(id), totalMessages(0), totalWords(0), timeSpentInCall(0) {}
+        // constructor
+        User(const std::string& _id, const std::string& _channel, const std::string& _username, const std::string& _global_name, const std::string& _discriminator)
+        : id(_id), channel(_channel), username(_username), global_name(_global_name), discriminator(_discriminator) {}
 
-        time_t addMessageToUser(Message newMessage);
-        void updateWordFrequencies(const std::string& inputString);
+        void addMessage(const Message& message);
         void printMessages();
+
+        void addCall(const Call& call);
+        void printCalls();
+
         void printStats();
-
-        //include some other stats - like a graph of messages over time and stuff like that
+    
+    private:
+        std::multimap<std::string, Message> messages;   // multimap of messages ordered by timestamp
+        std::multimap<std::string, Call> calls;         // multimap of calls ordered by timestamp
 };
-
-#endif

@@ -1,37 +1,23 @@
-#include <ctime>
-#include <string>
-#include <iostream>
-#include <sstream>
-#include <regex>
+#pragma once
 
-#ifndef MESSAGE_H
-#define MESSAGE_H
+#include <string>
 
 class Message {
-    public:
-        int id;
-        std::string content;
-        time_t timeStamp;
+public:
+    // variables from json
+    std::string id;             // message #
+    std::string content;        // string of message contents
+    std::string user_id;        // sender's user #
+    std::string channel_id;     // channel #
+    std::string timestamp;      // time the message was sent
+    bool mentioned;             // whether the other person was pinged
 
-        int mentionCount;
-        int wordCount;
-        bool isReply;
-        time_t callTime;
-        bool containsLink;
+    // post processing variables
+    std::string wordCount;      // number of words in the message
 
-        // Default constructor
-        Message() : id(0), timeStamp(0), content(""), mentionCount(0), wordCount(0), isReply(false), callTime(0), containsLink(false){};
+    // constructor
+    Message(const std::string& _id, const std::string& _content, const std::string& _channel_id, const std::string& _timestamp, bool _mentioned)
+        : id(_id), content(_content), channel_id(_channel_id), timestamp(_timestamp), mentioned(_mentioned) {}
 
-        Message(int ID, time_t time, std::string message);
-
-        void printMessage() const;
-
-    private:
-        int getMentionCount();
-        int getWordCount();
-        bool getIsReply();
-        time_t getCallTime();
-        bool getContainsLink();
+    int getWordCount();
 };
-
-#endif

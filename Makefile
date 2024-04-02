@@ -1,24 +1,20 @@
-# Compiler
 CC = g++
-# Compiler flags
-CFLAGS = -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -Wcast-align -Wconversion -Wsign-conversion -Wnull-dereference -g3 -O0
-# Linker flags
-LDFLAGS =
+CFLAGS = -std=c++11 -Wall -Wextra
+LIBS = -lcurl
 
-# Source files
-SRCS = main.cpp message.cpp user.cpp
-# Object files
+SRCS = main.cpp message.cpp user.cpp call.cpp
 OBJS = $(SRCS:.cpp=.o)
+TARGET = discord_api
 
-# Makefile
-all: main
+.PHONY: all clean
 
-main: $(OBJS)
-	$(CC) $(OBJS) -o main $(LDFLAGS)
+all: $(TARGET)
 
-# Rule to compile .cpp files to .o files
-%.o: %.cpp %.h
-	$(CC) -c $< $(CFLAGS)
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^ $(LIBS)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
-	rm -f *.o main
+	$(RM) $(OBJS) $(TARGET)

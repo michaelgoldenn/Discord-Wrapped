@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -std=c++11 -Wall -Wextra
+CFLAGS = -std=c++17 -Wall -Wextra
 LIBS = -lcurl
 
 SRCS = main.cpp message.cpp user.cpp call.cpp

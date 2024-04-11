@@ -11,29 +11,31 @@
 class User{
     public:
         // variables from json
-        std::string id;             // user #
-        std::string channel;        // channel #        
-        std::string username;       // global user id
-        std::string global_name;    // display name
-        std::string discriminator;  // i.e. #2415                       almost always 0 now
+        std::string channel;            // channel # 
+        std::string id;                 // user #       
+        std::string last_message_id;    // last message #
+        std::string username;           // global user id
+        std::string global_name;        // display name
+        std::string discriminator;      // i.e. #2415                almost always 0 now
 
-        // post processing variables
-        int messagesSent;
-        int messagesReceived;
+        // iterators
+        int totalMessages = 0;
+        int messagesSent = 0;
+        int messagesReceived = 0;
+        int charactersSent = 0;
+        int charactersReceived = 0;
+
+        int totalCalls = 0;
+        int callsSent = 0;
+        int callsReceived = 0;
+        double callTime = 0;
+
+        // post processing statistics
 
         // constructor
-        User(const std::string& _id, const std::string& _channel, const std::string& _username, const std::string& _global_name, const std::string& _discriminator)
-        : id(_id), channel(_channel), username(_username), global_name(_global_name), discriminator(_discriminator) {}
+        User(const std::string& _channel, const std::string& _id, const std::string& _last_message_id, const std::string& _username, const std::string& _global_name, const std::string& _discriminator)
+            : channel(_channel), id(_id), last_message_id(_last_message_id), username(_username), global_name(_global_name), discriminator(_discriminator) {}
 
-        void addMessage(const Message& message);
-        void printMessages();
-
-        void addCall(const Call& call);
-        void printCalls();
-
-        void printStats();
-    
-    private:
-        std::multimap<std::string, Message> messages;   // multimap of messages ordered by timestamp
-        std::multimap<std::string, Call> calls;         // multimap of calls ordered by timestamp
+        mutable std::multimap<std::string, Message> messages;   // multimap of messages ordered by timestamp
+        mutable std::multimap<std::string, Call> calls;         // multimap of calls ordered by timestamp
 };

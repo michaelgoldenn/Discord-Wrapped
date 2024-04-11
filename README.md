@@ -8,8 +8,15 @@ Using python3
 
 curl --header "Authorization: yourToken" _____ | python3 -m json.tool > out.json
 List of open channels as json:                       https://discordapp.com/api/users/@me/channels
+
+Main:
 50 most recent messages from specific channel:       https://discord.com/api/v9/channels/684551735645175848/messages?limit=50
 50 messages before x message(id?):                   https://discord.com/api/v9/channels/684551735645175848/messages?before=1224209852440510504&limit=50
+soviet_steel
+
+Alt:
+50 most recent messages from specific channel:       https://discord.com/api/v9/channels/1224614908906180659/messages?limit=50
+sayyouwill
 
 Project Team Software Team 5 Spring 2024 Semester Project
 

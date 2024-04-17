@@ -17,7 +17,7 @@ RUN echo '/usr/local/lib' | tee -a /etc/ld.so.conf.d/x86_64-linux-gnu.conf && ld
 # vim because reasons
 # libcurl library for c++ code that sends http requests
 # rapidjson library for interpreting json response
-RUN apt-get update && apt-get install -y curl vim python3-pip rapidjson-dev libcurl4-openssl-dev
+RUN apt-get update && apt-get install -y curl vim python3-pip rapidjson-dev libcurl4-openssl-dev sqlite3 libsqlite3-dev
 
 # Install general stuff
 RUN apt-get update

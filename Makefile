@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -std=c++17 -Wall -Wextra
-LIBS = -lcurl
+LIBS = -lcurl -lsqlite3
 
 SRCS = main.cpp message.cpp user.cpp call.cpp
 OBJS = $(SRCS:.cpp=.o)

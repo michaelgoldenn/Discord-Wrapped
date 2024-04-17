@@ -26,4 +26,17 @@ use '>Dev Containers: attach to Running container' in vscode at /code with
 Dev Containers extension to use the vscode feature set
 
 modifications to files in /app will be lost via this method when the container
-exits
+
+TODO:
+- fix timestamp rounding
+- add column to users table
+- add "first message timestamp" to user objects
+- optimize the http request making process by keeping the connection open instead of restarting it for each request
+- add "self" information in the same scope as the array of users
+    - things like first message ever sent, total messages sent to everyone, total messages received from everyone, etc (totals)
+- make "ranking" animation that shows most messaged people over time
+    - add all messages to a single multimap in main sorted by timestamp, use channel id of each message to identify which conversation it was from.
+    - iterate through every message and add them to a buffer, removing messages from the buffer which are more than 30 days older than the most recently iterated one.
+    keep count of the number of messages belonging to each user exist in that time window, and then you could save it as a list of rankings which can be displayed in order
+    (one ranking per day, representing the past 30 day totals.)
+    - 

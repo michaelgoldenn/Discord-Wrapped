@@ -7,7 +7,7 @@
 #include "message.h"
 #include "call.h"
 
-// A class that holds all messages and relevant stats about another user
+// a class that holds all messages and relevant stats about another user
 class User{
     public:
         // variables from json

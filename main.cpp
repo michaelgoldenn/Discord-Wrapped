@@ -12,6 +12,7 @@
 #include <ctime>
 #include <sstream>
 #include <future>
+#include <sqlite3.h>
 
 #include "rapidjson/document.h"
 #include "rapidjson/writer.h"
@@ -328,8 +329,6 @@ int main(int argc, char *argv[]) {
                 url = "https://discord.com/api/v9/channels/" + user.channel + "/messages?before=" + lastProcessedMessageId + "&limit=100";
             }
 
-            std::cout << std::endl << "request: " << url << std::endl;
-
             rapidjson::Document messageDoc;
             if (!performHttpRequest(url, auth_token, messageDoc)) {
                 updateTerminalLine("failed to fetch messages for user: " + user.username);
@@ -344,7 +343,6 @@ int main(int argc, char *argv[]) {
             }
 
             int messagesThisIteration = 0;
-            std::cout << "size of current iteration file: " << messageDoc.Size() << std::endl;
 
             // MAJOR DATA PROCESSING LETS GOOOO
             for (rapidjson::SizeType i = 0; i < messageDoc.Size(); i++) {
@@ -409,13 +407,10 @@ int main(int argc, char *argv[]) {
                     messagesThisIteration++;
                 }
             }
-            
-            std::cout << "actual size of current iteration file: " << messagesThisIteration << std::endl;
 
             const rapidjson::Value& messages = messageDoc.GetArray();
             if (!messages.Empty()) {
                 lastProcessedMessageId = messages[messages.Size() - 1]["id"].GetString();
-                std::cout << "oldest message retreived: " << formatTimestamp(messages[messages.Size() - 1]["timestamp"].GetString()) << std::endl;
             }
 
             messageDoc.Clear();
@@ -425,7 +420,6 @@ int main(int argc, char *argv[]) {
                 isLastIteration = true;
             }
             httpIterations++;
-            std::cout << std::endl;
         } 
 
         user.totalMessages = totalMessages;

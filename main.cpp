@@ -13,11 +13,15 @@
 #include <sstream>
 #include <future>
 #include <sqlite3.h>
+#include <fstream>
+#include <map>
+#include <sstream>
 
 #include "rapidjson/document.h"
 #include "rapidjson/writer.h"
 #include "rapidjson/stringbuffer.h"
 #include "user.h"
+#include "xlsxwriter.h"
 
 std::vector<User> users;
 int timeZoneOffset = 0;
@@ -71,6 +75,85 @@ void updateHourCounter(const std::string& timestamp) {
     // Increment the corresponding counter in the array
     if (hour >= 0 && hour < 24) {
         hourCounters[hour]++;
+    }
+}
+
+// Function to convert timestamp string to time_t
+std::time_t timestamp_to_time_t(const std::string& timestamp) {
+    std::tm tm = {};
+    std::istringstream ss(timestamp);
+    ss >> std::get_time(&tm, "%Y-%m-%dT%H:%M:%S");
+    return mktime(&tm);
+}
+
+// Exports a CSV file fo all messages per month
+void createCSV() {
+    // Find the oldest message timestamp
+    std::time_t oldestTimestamp = std::numeric_limits<std::time_t>::max();
+    for (const auto& user : users) {
+        if (!user.messages.empty()) {
+            std::time_t timestamp = timestamp_to_time_t(user.messages.begin()->second.timestamp);
+            if (timestamp < oldestTimestamp) {
+                oldestTimestamp = timestamp;
+            }
+        }
+    }
+
+    // Convert the oldest timestamp to a tm struct
+    std::tm* oldestTimeInfo = std::localtime(&oldestTimestamp);
+    int startYear = oldestTimeInfo->tm_year + 1900;
+    int startMonth = oldestTimeInfo->tm_mon + 1;
+
+    // Create a map to hold message counts per month per user
+    std::map<std::string, std::map<std::string, int>> messageCounts;
+
+    // Process messages for each user
+    for (const auto& user : users) {
+        for (const auto& messagePair : user.messages) {
+            const Message& message = messagePair.second;
+            std::time_t timestamp = timestamp_to_time_t(message.timestamp);
+            std::tm* timeInfo = std::localtime(&timestamp);
+            std::stringstream monthYear;
+            monthYear << std::setfill('0') << std::setw(4) << (timeInfo->tm_year + 1900) << "-"
+                      << std::setfill('0') << std::setw(2) << (timeInfo->tm_mon + 1);
+            messageCounts[user.username][monthYear.str()]++;
+        }
+    }
+
+    // Open a file to write the CSV data
+    std::cout << "printing to csv..." << std::endl;
+    std::ofstream csvFile("message_history.csv");
+
+    // Write the header row with user names
+    for (const auto& user : users) {
+        csvFile << "," << user.username;
+    }
+    csvFile << "\n";
+
+    // Write the data rows for each month
+    for (int year = startYear; ; year++) {
+        for (int month = (year == startYear ? startMonth : 1); month <= 12; month++) {
+            std::stringstream monthYear;
+            monthYear << std::setfill('0') << std::setw(4) << year << "-"
+                      << std::setfill('0') << std::setw(2) << month;
+            std::string monthYearStr = monthYear.str();
+
+            // Check if we have reached beyond the current month
+            std::time_t currentTime = std::time(nullptr);
+            std::tm* currentTimeInfo = std::localtime(&currentTime);
+            if (year > (currentTimeInfo->tm_year + 1900) ||
+                (year == (currentTimeInfo->tm_year + 1900) && month > (currentTimeInfo->tm_mon + 1))) {
+                csvFile.close();
+                return;
+            }
+
+            // Write the month-year and message counts for each user
+            csvFile << monthYearStr;
+            for (const auto& user : users) {
+                csvFile << "," << messageCounts[user.username][monthYearStr];
+            }
+            csvFile << "\n";
+        }
     }
 }
 
@@ -306,6 +389,9 @@ void processCommand(const std::string& command) {
         std::cout << std::right << std::setw(4) << hour << ":00 | " << std::setw(8) << hourCounters[hour] << std::endl;
     }
     std::cout << std::endl;
+    } else if (command == "export"){
+        //export to csv sheet
+        createCSV();
     } else {
         std::cout << std::endl;
         std::cout << "invalid command." << std::endl;
@@ -624,6 +710,7 @@ int main(int argc, char *argv[]) {
         std::cout << "- users:                          - returns list of DMs open with user info"                      << std::endl;
         std::cout << "- get <username> messages:        - returns list of messages for given user"                      << std::endl;
         std::cout << "- get <username> calls:           - returns list of calls for given user"                         << std::endl;
+        std::cout << "- export:                         - exports csv file to see messages over time for all users"     << std::endl;
         std::cout << "- exit:                           - exits the program"                                            << std::endl;
         std::getline(std::cin, command);
 

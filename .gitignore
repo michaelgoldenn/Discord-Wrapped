@@ -2,3 +2,5 @@
 main
 build
 *.o
+*.csv
+discord_api

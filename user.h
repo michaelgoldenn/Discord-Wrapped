@@ -32,6 +32,8 @@ class User{
 
         // post processing statistics
 
+        User() = default;
+
         // constructor
         User(const std::string& _channel, const std::string& _id, const std::string& _last_message_id, const std::string& _username, const std::string& _global_name, const std::string& _discriminator)
             : channel(_channel), id(_id), last_message_id(_last_message_id), username(_username), global_name(_global_name), discriminator(_discriminator) {}

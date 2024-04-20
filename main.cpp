@@ -20,14 +20,34 @@
 #include "user.h"
 
 std::vector<User> users;
+int timeZoneOffset = 0;
 
-// format a timestamp to be nice to read in terminal (military time)
+int hourCounters[24] = {0};
+
+int totalMessagesSent = 0;
+int totalMessagesReceived = 0;
+int totalCharactersSent = 0;
+int totalCharactersReceived = 0;
+
+int totalCallsSent = 0;
+int totalCallsReceived = 0;
+double totalTimeCalling = 0;
+
+User oldestMessage;
+
+// function to format a timestamp based on the global timezone offset
 std::string formatTimestamp(const std::string& timestamp) {
     std::tm tm = {};
     std::istringstream ss(timestamp);
     ss >> std::get_time(&tm, "%Y-%m-%dT%H:%M:%S");
     if (ss.fail()) {
         return "Invalid timestamp format";
+    }
+
+    tm.tm_hour += timeZoneOffset; // Subtract timeZoneOffset hours
+    if (tm.tm_hour < 0) {
+        tm.tm_hour += 24; // Add 24 hours to handle negative values
+        tm.tm_mday--; // Adjust day accordingly
     }
 
     std::ostringstream oss;
@@ -37,6 +57,21 @@ std::string formatTimestamp(const std::string& timestamp) {
         << std::setw(2) << tm.tm_hour << ':'
         << std::setw(2) << tm.tm_min;
     return oss.str();
+}
+
+// Function to update the hour counter based on a timestamp and timezone offset
+void updateHourCounter(const std::string& timestamp) {
+    // Extract the hour component from the timestamp
+    std::string hourStr = timestamp.substr(11, 2); // Assuming the timestamp format is consistent
+    int hour = std::stoi(hourStr);
+
+    // Adjust the hour based on the timezone offset
+    hour = (hour + timeZoneOffset + 24) % 24; // Ensure the result is within 0-23 range
+
+    // Increment the corresponding counter in the array
+    if (hour >= 0 && hour < 24) {
+        hourCounters[hour]++;
+    }
 }
 
 // replaces unprintable characters with _ for now
@@ -110,12 +145,37 @@ bool performHttpRequest(const std::string& url, const std::string& auth_token, r
 
 // print a given message
 void printMessage(const Message& message) {
-    std::cout << "timestamp: " << formatTimestamp(message.timestamp) << "| message_id: " << message.id << "| author: " << message.author << " - content: " << message.content << std::endl;
+    std::cout << "timestamp: " << formatTimestamp(message.timestamp) << " | message_id: " << message.id << " | author: " << message.author << " - content: " << message.content << std::endl;
 }
 
 // print a given call
 void printCall(const Call& call) {
-    std::cout << "timestamp: " << formatTimestamp(call.timestamp) << "| message_id " << call.id << "| author: " << call.author << " - ended timestamp: " << formatTimestamp(call.ended_timestamp) << std::endl;
+    std::cout << "timestamp: " << formatTimestamp(call.timestamp) << " | message_id " << call.id << " | author: " << call.author << " - ended timestamp: " << formatTimestamp(call.ended_timestamp) << std::endl;
+}
+
+// Creates a "super user" that has the total from all other users
+User addAllUsers() {
+    // Initialize a 'super user' with empty or zero values
+    User superUser("", "", "", "total", "super_user", "");
+
+    // Aggregate data from each user
+    for (const auto& user : users) {
+        superUser.totalMessages += user.totalMessages;
+        superUser.messagesSent += user.messagesSent;
+        superUser.messagesReceived += user.messagesReceived;
+        superUser.charactersSent += user.charactersSent;
+        superUser.charactersReceived += user.charactersReceived;
+        superUser.totalCalls += user.totalCalls;
+        superUser.callsSent += user.callsSent;
+        superUser.callsReceived += user.callsReceived;
+        superUser.callTime += user.callTime;
+
+        // Combine messages and calls multimap
+        superUser.messages.insert(user.messages.begin(), user.messages.end());
+        superUser.calls.insert(user.calls.begin(), user.calls.end());
+    }
+
+    return superUser;
 }
 
 void processCommand(const std::string& command) {
@@ -165,14 +225,15 @@ void processCommand(const std::string& command) {
         std::cout << std::endl;
         std::cout << "printing list of users with various stats." << std::endl;
         // table headers
-        std::cout << "+----------------------+--------------+--------------+--------------+--------------+------------+" << std::endl;
+        std::cout << "+----------------------+--------------+--------------+--------------+--------------+------------+-------------------+" << std::endl;
         std::cout << "| " << std::setw(20) << std::left << "username" << " | "
                 << std::setw(12) << std::left << "total msgs" << " | "
                 << std::setw(12) << std::left << "chars sent" << " | "
                 << std::setw(12) << std::left << "chars recv" << " | "
                 << std::setw(12) << std::left << "total calls" << " | "
-                << std::setw(10) << std::left << "call time" << " |" << std::endl;
-        std::cout << "+----------------------+--------------+--------------+--------------+--------------+------------+" << std::endl;
+                << std::setw(10) << std::left << "call time" << " |"
+                << std::setw(18) << std::left << "oldest msg time" << " |" << std::endl;
+        std::cout << "+----------------------+--------------+--------------+--------------+--------------+------------+-------------------+" << std::endl;
         // print the list of users with formatted info
         for (const auto &user : users) {
             std::string formatted_id = truncateString(user.username, 20);
@@ -181,7 +242,7 @@ void processCommand(const std::string& command) {
             std::string formatted_chars_recv = std::to_string(user.charactersReceived);
             std::string formatted_total_calls = std::to_string(user.totalCalls);
 
-            // sound callTime to two decimal places
+            // round callTime to two decimal places
             std::stringstream call_time_ss;
             call_time_ss << std::fixed << std::setprecision(2) << user.callTime;
             std::string formatted_call_time = call_time_ss.str();
@@ -191,19 +252,101 @@ void processCommand(const std::string& command) {
                     << std::setw(12) << std::left << formatted_chars_sent << " | "
                     << std::setw(12) << std::left << formatted_chars_recv << " | "
                     << std::setw(12) << std::left << formatted_total_calls << " | "
-                    << std::setw(10) << std::left << formatted_call_time << " |" << std::endl;
+                    << std::setw(10) << std::left << formatted_call_time << " |"
+                    << std::setw(18) << std::left << formatTimestamp(user.messages.begin() -> first) << " |" << std::endl;
         }
-        std::cout << "+----------------------+--------------+--------------+--------------+--------------+------------+" << std::endl;
+        std::cout << "+----------------------+--------------+--------------+--------------+--------------+------------+-------------------+" << std::endl;
+        //just copied what came above for the "Total" line
+        User superUser = addAllUsers();
+        std::string formatted_id = truncateString(superUser.username, 20);
+        std::string formatted_total_msgs = std::to_string(superUser.totalMessages);
+        std::string formatted_chars_sent = std::to_string(superUser.charactersSent);
+        std::string formatted_chars_recv = std::to_string(superUser.charactersReceived);
+        std::string formatted_total_calls = std::to_string(superUser.totalCalls);
+
+        // sound callTime to two decimal places
+        std::stringstream call_time_ss;
+        call_time_ss << std::fixed << std::setprecision(2) << superUser.callTime;
+        std::string formatted_call_time = call_time_ss.str();
+
+        std::cout << "| " << std::setw(20) << std::left << formatted_id << " | "
+                << std::setw(12) << std::left << formatted_total_msgs << " | "
+                << std::setw(12) << std::left << formatted_chars_sent << " | "
+                << std::setw(12) << std::left << formatted_chars_recv << " | "
+                << std::setw(12) << std::left << formatted_total_calls << " | "
+                << std::setw(10) << std::left << formatted_call_time << " |"
+                << std::setw(18) << std::left << formatTimestamp(superUser.messages.begin() -> first) << " |" << std::endl;
+        std::cout << "+----------------------+--------------+--------------+--------------+--------------+------------+-------------------+" << std::endl;
         std::cout << std::endl;
     } else if (command == "exit") {
         std::cout << std::endl;
         std::cout << "exiting program..." << std::endl;
         exit(0);
+    } else if (command == "stats") {
+        std::cout << std::endl;
+        std::cout << "complete, total statistics for yourself:"                 << std::endl;          
+        std::cout << "messages sent:          " << totalMessagesSent            << std::endl;
+        std::cout << "messages received:      " << totalMessagesReceived        << std::endl;
+        std::cout << "characters sent:        " << totalCharactersSent          << std::endl;
+        std::cout << "characters received:    " << totalCharactersReceived      << std::endl;
+        std::cout << "calls started:          " << totalCallsSent               << std::endl;
+        std::cout << "calls received:         " << totalCallsReceived           << std::endl;
+        std::cout << "hours spent in a call:  " << totalTimeCalling             << std::endl;
+        std::cout << "the first message ever sent/received on your account:"    << std::endl;
+        printMessage(oldestMessage.messages.begin() -> second);
+        std::cout << std::endl;
+    } else if (command == "times") {
+        std::cout << std::endl;
+        std::cout << "printing total messages sent each hour of the day" << std::endl;
+        std::cout << std::endl;
+        std::cout << "   hour | messages" << std::endl;
+        std::cout << "--------------------" << std::endl;
+        for (int hour = 0; hour < 24; hour++) {
+        // print the hour and message count
+        std::cout << std::right << std::setw(4) << hour << ":00 | " << std::setw(8) << hourCounters[hour] << std::endl;
+    }
+    std::cout << std::endl;
     } else {
-        std::cerr << "invalid command." << std::endl;
+        std::cout << std::endl;
+        std::cout << "invalid command." << std::endl;
+        std::cout << std::endl;
     }
 }
 
+std::string getOlderTimestamp(const std::string& timestamp1, const std::string& timestamp2) {
+    std::tm tm1 = {}, tm2 = {};
+    strptime(timestamp1.c_str(), "%Y-%m-%dT%H:%M:%S", &tm1);
+    strptime(timestamp2.c_str(), "%Y-%m-%dT%H:%M:%S", &tm2);
+
+    std::time_t time1 = std::mktime(&tm1);
+    std::time_t time2 = std::mktime(&tm2);
+
+    return (time1 < time2) ? timestamp1 : timestamp2;
+}
+
+const User& getOldestFirstMessageUser(const User& user1, const User& user2) {
+    if (user1.messages.empty() && user2.messages.empty()) {
+        throw std::invalid_argument("Both users have no messages.");
+    } else if (user1.messages.empty()) {
+        return user2;
+    } else if (user2.messages.empty()) {
+        return user1;
+    }
+
+    const std::string& firstMsgTime1 = user1.messages.begin() -> first;
+    const std::string& firstMsgTime2 = user2.messages.begin() -> first;
+
+    std::tm tm1 = {}, tm2 = {};
+    strptime(firstMsgTime1.c_str(), "%Y-%m-%dT%H:%M:%S", &tm1);
+    strptime(firstMsgTime2.c_str(), "%Y-%m-%dT%H:%M:%S", &tm2);
+
+    std::time_t time1 = std::mktime(&tm1);
+    std::time_t time2 = std::mktime(&tm2);
+
+    return (time1 < time2) ? user1 : user2;
+}
+
+// TODO: this is ass
 // function to calculate the time difference in hours between two timestamps
 double calculateCallDuration(const std::string& startTimestamp, const std::string& endTimestamp) {
     std::tm start_tm = {};
@@ -224,15 +367,37 @@ double calculateCallDuration(const std::string& startTimestamp, const std::strin
     return hours;
 }
 
+// function to map symbolic time zones to their offset values
+int getTimeZoneOffset(const std::string& symbolicTimeZone) {
+    if (symbolicTimeZone == "EST") {
+        return -5; // Eastern Standard Time (UTC-5)
+    } else if (symbolicTimeZone == "PST") {
+        return -8; // Pacific Standard Time (UTC-8)
+    } else if (symbolicTimeZone == "GMT") {
+        return 0; // Greenwich Mean Time (UTC+0)
+    } else {
+        std::cout << "timezone not recognized, defaulting to GMT (-0)" << std::endl;
+        return 0; // Default to GMT if symbolic timezone is not recognized
+    }
+}
+
 int main(int argc, char *argv[]) {
     std::cout << std::endl;
-    std::cout << "requesting your discord channel list..." << std::endl;
+    std::string auth_token;
 
-    if (argc != 2) {
-        std::cerr << "usage: " << argv[0] << " <auth_token>" << std::endl;
+    try {
+        if (argc != 3) {
+            throw std::invalid_argument("Usage: <symbolicTimeZone> <auth_token>");
+        }
+
+        timeZoneOffset = getTimeZoneOffset(argv[1]); // Set global timezone offset from symbolic timezone
+        auth_token = argv[2];                        // Set auth token from command line
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
         return 1;
     }
-    std::string auth_token = argv[1];
+
+    std::cout << "requesting your discord channel list..." << std::endl;
 
     // perform http request to fetch channel list
     std::string url = "https://discordapp.com/api/users/@me/channels";
@@ -315,11 +480,11 @@ int main(int argc, char *argv[]) {
                 updateTerminalLine("requesting Discord messages for " + user.username);
                 httpIterations = 0;
             } else if (httpIterations % 3 == 0) {
-                updateTerminalLine("requesting Discord messages for " + user.username + ".");
+                updateTerminalLine("requesting Discord messages for " + user.username + "...");
             } else if (httpIterations % 2 == 0) {
                 updateTerminalLine("requesting Discord messages for " + user.username + "..");
             } else {
-                updateTerminalLine("requesting Discord messages for " + user.username + "...");
+                updateTerminalLine("requesting Discord messages for " + user.username + ".");
             }
 
             std::string url;
@@ -369,6 +534,7 @@ int main(int argc, char *argv[]) {
                         charactersReceived = charactersReceived + content.length();     // total received characters
                     } else {
                         messagesSent++;                                                 // total sent messages
+                        updateHourCounter(timestamp);                                   // add your messages timestamp to hourCounter
                         charactersSent = charactersSent + content.length();             // total sent characters
                     }
                     
@@ -422,6 +588,10 @@ int main(int argc, char *argv[]) {
             httpIterations++;
         } 
 
+        // check if this user had an older message than the previous oldest message exchanger
+        oldestMessage = getOldestFirstMessageUser(user, oldestMessage);
+
+        // add to individual user totals
         user.totalMessages = totalMessages;
         user.messagesSent = messagesSent;
         user.messagesReceived = messagesReceived;
@@ -432,6 +602,16 @@ int main(int argc, char *argv[]) {
         user.callsSent = callsSent;
         user.callsReceived = callsReceived;
         user.callTime = callTime;
+
+        // add to overall totals
+        totalMessagesSent += messagesSent;
+        totalMessagesReceived += messagesReceived;
+        totalCharactersSent += charactersSent;
+        totalCharactersReceived += charactersReceived;
+
+        totalCallsSent += callsSent;
+        totalCallsReceived += callsReceived;
+        totalTimeCalling += callTime;
     }
     updateTerminalLine("finished fetching all user messages.");
     std::cout << std::endl << std::endl;
@@ -439,6 +619,8 @@ int main(int argc, char *argv[]) {
     std::string command;
     while (true) {
         std::cout << "enter one of the following commands:"                                                             << std::endl;
+        std::cout << "- stats:                          - returns list of overall personal statistics"                  << std::endl;
+        std::cout << "- times:                          - returns list of overall message sending times"                << std::endl;
         std::cout << "- users:                          - returns list of DMs open with user info"                      << std::endl;
         std::cout << "- get <username> messages:        - returns list of messages for given user"                      << std::endl;
         std::cout << "- get <username> calls:           - returns list of calls for given user"                         << std::endl;

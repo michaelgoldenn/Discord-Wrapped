@@ -2,7 +2,7 @@ CC = g++
 CFLAGS = -std=c++17 -Wall -Wextra
 LIBS = -lcurl -lsqlite3
 
-SRCS = main.cpp message.cpp user.cpp call.cpp
+SRCS = main.cpp message.cpp call.cpp
 OBJS = $(SRCS:.cpp=.o)
 TARGET = discord_api
 
